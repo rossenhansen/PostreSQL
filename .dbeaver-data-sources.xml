@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sources>
+	<data-source id="postgres-jdbc-16231c42d7c-6c294651a7f631e3" provider="postgresql" driver="postgres-jdbc" name="PostgreSQL - postgres" save-password="true" show-system-objects="true" read-only="false">
+		<connection host="localhost" port="5432" server="" database="postgres" url="jdbc:postgresql://localhost:5432/postgres" user="postgres" password="NRMzCAlzSkJFQV9tR3ak" home="postgresql-x64-10" type="dev">
+			<provider-property name="@dbeaver-show-non-default-db@" value="false"/>
+			<provider-property name="@dbeaver-switch-db-on-expand@" value="false"/>
+			<network-handler type="TUNNEL" id="ssh_tunnel" enabled="false" save-password="false">
+				<property name="sshConnectTimeout" value="10000"/>
+				<property name="port" value="22"/>
+				<property name="authType" value="PASSWORD"/>
+			</network-handler>
+			<network-handler type="PROXY" id="socks_proxy" enabled="false" save-password="false">
+				<property name="socks-port" value="1080"/>
+			</network-handler>
+			<network-handler type="CONFIG" id="postgre_ssl" enabled="false" save-password="false"/>
+		</connection>
+	</data-source>
+	<data-source id="dbeaver-sample-database-sqlite-1" provider="generic" driver="sqlite_jdbc" name="DBeaver Sample Database (SQLite)" save-password="true" show-system-objects="true" read-only="false">
+		<connection server="" database="C:\Users\Mark\.dbeaver4\.metadata\sample-database-sqlite-1\Chinook.db" url="jdbc:sqlite:C:\Users\Mark\.dbeaver4\.metadata\sample-database-sqlite-1\Chinook.db" type="dev"/>
+	</data-source>
+	<filters/>
+</data-sources>

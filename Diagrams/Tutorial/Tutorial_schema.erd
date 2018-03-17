@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="Tutorial_schema" time="201803171445">
+	<entities>
+		<data-source id="postgres-jdbc-16231c42d7c-6c294651a7f631e3">
+			<entity id="1" name="clients" fq-name="&quot;Tutorial&quot;.clients">
+				<path name="Tutorial"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="2" name="contacts" fq-name="&quot;Tutorial&quot;.contacts">
+				<path name="Tutorial"/>
+				<path name="postgres"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="fk_contacts_clients" fq-name="&quot;Tutorial&quot;.contacts.fk_contacts_clients" type="fk" pk-ref="2" fk-ref="1"/>
+	</relations>
+	<notes/>
+</diagram>
