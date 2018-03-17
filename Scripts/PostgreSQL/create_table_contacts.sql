@@ -5,8 +5,9 @@ create table contacts (
 	,lastname varchar(255)
 	,salutation varchar(10)
 	,email varchar(255)
-	,created_at timestamp NOT NULL DEFAULT Now()
-	,updated_at timestamp NULL
+	,created_at timestamp not null default Now()
+	,updated_at timestamp null
+	,synched_at timestamp not null default now()
 	,constraint fk_contacts_clients
      	foreign key (client_id) 
      	references clients (id)
@@ -21,4 +22,4 @@ create index contacts_created_at_updated_at_idx on contacts using btree (created
 -- ALTER TABLE "Tutorial".contacts ADD created_at timestamp NOT NULL DEFAULT Now() ;
 -- ALTER TABLE "Tutorial".contacts ADD updated_at timestamp NULL ;
 
--- drop table contacts cascade
+-- drop table contacts cascade;

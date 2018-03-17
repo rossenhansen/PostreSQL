@@ -4,8 +4,9 @@ create table phone_numbers (
 	,contact_id int
 	,phone_number varchar(50)
 	,phone_number_label varchar(10)
-	,created_at timestamp default now()
-	,updated_at timestamp
+	,created_at timestamp not null default now()
+	,updated_at timestamp null
+	,synched_at timestamp not null default now()
 	,constraint fk_phone_number_clients
      	foreign key (client_id) 
      	references clients (id)

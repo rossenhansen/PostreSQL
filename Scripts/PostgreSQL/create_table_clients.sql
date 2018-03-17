@@ -8,8 +8,9 @@ create table clients (
 	,address_postcode varchar(10)
 	,address_country varchar(50) default 'Australia'
 	,currency_code varchar(3) default 'AUD'
-	,created_at timestamp default now()
-	,updated_at timestamp
+	,created_at timestamp not null default now()
+	,updated_at timestamp null
+	,synched_at timestamp not null default now()
 );
 
 create index clients_client_name_idx on clients using btree (lower(client_name));
@@ -19,4 +20,4 @@ create index clients_created_at_updated_at_idx on clients using btree (created_a
 
 
 -- alter table clients add column address_postcode varchar(10);
--- drop table clients cascade; 
+-- drop table clients cascade;
