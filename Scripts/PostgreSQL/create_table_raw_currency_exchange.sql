@@ -8,5 +8,3 @@ create table raw_currency_exchange (
 );
 
 create index raw_currency_exchange_currency_code_idx on raw_currency_exchange using btree (upper(currency_code));
-
-

@@ -18,5 +18,8 @@
 	<data-source id="dbeaver-sample-database-sqlite-1" provider="generic" driver="sqlite_jdbc" name="DBeaver Sample Database (SQLite)" save-password="true" show-system-objects="true" read-only="false">
 		<connection server="" database="C:\Users\Mark\.dbeaver4\.metadata\sample-database-sqlite-1\Chinook.db" url="jdbc:sqlite:C:\Users\Mark\.dbeaver4\.metadata\sample-database-sqlite-1\Chinook.db" type="dev"/>
 	</data-source>
+	<data-source id="csvjdbc-16233d7ed62-4fb14b101c2c4890" provider="generic" driver="csvjdbc" name="Flat files (CSV) - data" save-password="true" show-system-objects="true" read-only="false">
+		<connection server="" database="C:\Users\Mark\.dbeaver4\General\data" url="jdbc:relique:csv:C:\Users\Mark\.dbeaver4\General\data" type="dev"/>
+	</data-source>
 	<filters/>
 </data-sources>
