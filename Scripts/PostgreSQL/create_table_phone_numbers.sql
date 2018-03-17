@@ -20,5 +20,5 @@ create index phone_numbers_contact_id_idx on phone_numbers using btree (contact_
 create index phone_numbers_created_at_updated_at_idx on phone_numbers using btree (created_at,updated_at);
 
 
-
+-- drop table phone_numbers;
 

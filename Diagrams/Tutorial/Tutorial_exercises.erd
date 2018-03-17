@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<diagram version="1" name="Tutorial_schema.erd" time="201803171540">
+<diagram version="1" name="Tutorial_exercises" time="201803171556">
 	<entities>
 		<data-source id="postgres-jdbc-16231c42d7c-6c294651a7f631e3">
-			<entity id="1" name="clients" fq-name="&quot;Tutorial&quot;.clients" order="0" x="20" y="20">
+			<entity id="1" name="clients" fq-name="&quot;Tutorial&quot;.clients">
 				<path name="Tutorial"/>
 				<path name="postgres"/>
 			</entity>
-			<entity id="2" name="contacts" fq-name="&quot;Tutorial&quot;.contacts" order="1" x="320" y="40">
+			<entity id="2" name="contacts" fq-name="&quot;Tutorial&quot;.contacts">
 				<path name="Tutorial"/>
 				<path name="postgres"/>
 			</entity>
-			<entity id="3" name="phone_numbers" fq-name="&quot;Tutorial&quot;.phone_numbers" order="2" x="160" y="240">
+			<entity id="3" name="phone_numbers" fq-name="&quot;Tutorial&quot;.phone_numbers">
 				<path name="Tutorial"/>
 				<path name="postgres"/>
 			</entity>

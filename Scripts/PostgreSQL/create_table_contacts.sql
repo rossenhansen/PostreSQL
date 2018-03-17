@@ -18,3 +18,5 @@ create index contacts_created_at_updated_at_idx on contacts using btree (created
 
 -- ALTER TABLE "Tutorial".contacts ADD created_at timestamp NOT NULL DEFAULT Now() ;
 -- ALTER TABLE "Tutorial".contacts ADD updated_at timestamp NULL ;
+
+-- drop table contacts cascade
