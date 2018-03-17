@@ -4,10 +4,17 @@ create table contacts (
 	,contact_firstname varchar(255)
 	,contact_lastname varchar(255)
 	,contact_salutation varchar(10)
+	,created_at timestamp NOT NULL DEFAULT Now()
+	,updated_at timestamp NULL
 	,constraint fk_contacts_clients
      	foreign key (client_id) 
      	references clients (id)
 );
 
-create index contact_name_idx on contacts using btree (lower(contact_firstname),lower(contact_lastname));
-create index client_id_idx on contacts using btree (client_id);
+create index contacts_contact_name_idx on contacts using btree (lower(contact_firstname),lower(contact_lastname));
+create index contacts_client_id_idx on contacts using btree (client_id);
+create index contacts_created_at_updated_at_idx on contacts using btree (created_at,updated_at);
+
+
+-- ALTER TABLE "Tutorial".contacts ADD created_at timestamp NOT NULL DEFAULT Now() ;
+-- ALTER TABLE "Tutorial".contacts ADD updated_at timestamp NULL ;

@@ -11,10 +11,10 @@ create table clients (
 	,updated_at timestamp
 );
 
-create index client_name_idx on clients using btree (lower(client_name));
-create index address_idx on clients using btree (lower(address_prefix),lower(address_street),lower(address_location),lower(address_state),lower(address_country));
-create index currency_code_idx on clients using btree (currency_code);
-create index created_at_updated_at_idx on clients using btree (created_at,updated_at);
+create index clients_client_name_idx on clients using btree (lower(client_name));
+create index clients_address_idx on clients using btree (lower(address_prefix),lower(address_street),lower(address_location),lower(address_state),lower(address_country));
+create index clients_currency_code_idx on clients using btree (currency_code);
+create index clients_created_at_updated_at_idx on clients using btree (created_at,updated_at);
 
 
 
