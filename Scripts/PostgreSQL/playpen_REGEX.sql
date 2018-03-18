@@ -14,6 +14,7 @@ select '$128' as value ,(regex_matches('$128','\p{Currency_Symbol}+'))[1] as tes
 -- \p{Sc} or \p{Currency_Symbol}
 
 
+
 select	 name_string ,names
 		,array_length(names,1) as num_names
 		,case when array_length(names,1) = 1 then null else names[1] end as first_name
@@ -27,3 +28,6 @@ from  (	select 'Mark' as name_string ,regexp_split_to_array('Mark', E'\\s+') as 
 		select 'Mark.Hansen' as name_string ,regexp_split_to_array('Mark.Hansen', E'\\s+') as names union
 		select 'Mark Rossen-Hansen' as name_string ,regexp_split_to_array('Mark Rossen-Hansen', E'\\s+') as names 
 ) as name_array;
+
+
+

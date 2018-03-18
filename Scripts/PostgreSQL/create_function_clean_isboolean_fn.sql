@@ -1,7 +1,7 @@
 create or replace function clean_isboolean_fn(text) returns boolean as $$
 declare value varchar;
 begin
-	value = lower(Ltrim(RTrim(coalesce($1,'1'))));
+	value = lower(trim(coalesce($1,'1')));
 	return 	case value 
 			when 'yes' then true
 			when 'no' then true

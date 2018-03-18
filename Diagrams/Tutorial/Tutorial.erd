@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="Tutorial.erd" time="201803190145">
+	<entities>
+		<data-source id="postgres-jdbc-16231c42d7c-6c294651a7f631e3">
+			<entity id="1" name="clean_client_contact_validation_check_view" fq-name="&quot;Tutorial&quot;.clean_client_contact_validation_check_view" order="0" x="400" y="820">
+				<path name="Tutorial"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="2" name="clean_client_contact_view" fq-name="&quot;Tutorial&quot;.clean_client_contact_view" order="1" x="180" y="820">
+				<path name="Tutorial"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="3" name="clean_currency_exchange_validation_check_view" fq-name="&quot;Tutorial&quot;.clean_currency_exchange_validation_check_view" order="2" x="1180" y="820">
+				<path name="Tutorial"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="4" name="clean_currency_exchange_view" fq-name="&quot;Tutorial&quot;.clean_currency_exchange_view" order="3" x="960" y="820">
+				<path name="Tutorial"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="5" name="clients" fq-name="&quot;Tutorial&quot;.clients" order="4" x="20" y="231">
+				<path name="Tutorial"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="6" name="contacts" fq-name="&quot;Tutorial&quot;.contacts" order="5" x="340" y="40">
+				<path name="Tutorial"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="7" name="currency_rates" fq-name="&quot;Tutorial&quot;.currency_rates" order="6" x="800" y="140">
+				<path name="Tutorial"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="8" name="locations" fq-name="&quot;Tutorial&quot;.locations" order="7" x="460" y="300">
+				<path name="Tutorial"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="9" name="phone_numbers" fq-name="&quot;Tutorial&quot;.phone_numbers" order="8" x="200" y="540">
+				<path name="Tutorial"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="10" name="raw_client_customer" fq-name="&quot;Tutorial&quot;.raw_client_customer" order="9" x="20" y="820">
+				<path name="Tutorial"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="11" name="raw_currency_exchange" fq-name="&quot;Tutorial&quot;.raw_currency_exchange" order="10" x="780" y="820">
+				<path name="Tutorial"/>
+				<path name="postgres"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="fk_contacts_clients" fq-name="&quot;Tutorial&quot;.contacts.fk_contacts_clients" type="fk" pk-ref="6" fk-ref="5"/>
+		<relation name="fk_contacts_locations" fq-name="&quot;Tutorial&quot;.contacts.fk_contacts_locations" type="fk" pk-ref="6" fk-ref="8"/>
+		<relation name="fk_locations_clients" fq-name="&quot;Tutorial&quot;.locations.fk_locations_clients" type="fk" pk-ref="8" fk-ref="5"/>
+		<relation name="fk_phone_number_clients" fq-name="&quot;Tutorial&quot;.phone_numbers.fk_phone_number_clients" type="fk" pk-ref="9" fk-ref="5"/>
+		<relation name="fk_phone_number_locations" fq-name="&quot;Tutorial&quot;.phone_numbers.fk_phone_number_locations" type="fk" pk-ref="9" fk-ref="8"/>
+	</relations>
+	<notes/>
+</diagram>
