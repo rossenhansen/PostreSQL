@@ -5,9 +5,9 @@ create table contacts (
 	,client_id int
 	,location_id int
 	,firstname varchar(255)
+	,othername varchar(255)
 	,lastname varchar(255)
-	,salutation varchar(10)
-	,email varchar(255)
+	,email varchar(510)
 	,created_at timestamp not null default Now()
 	,updated_at timestamp null
 	,synched_at timestamp not null default now()
@@ -19,7 +19,7 @@ create table contacts (
      		references locations (id)
 );
 
-create index contacts_name_idx on contacts using btree (lower(firstname),lower(lastname));
+create index contacts_name_idx on contacts using btree (lower(firstname),lower(othername),lower(lastname));
 create index contacts_client_id_idx on contacts using btree (client_id);
 create index contacts_email_id_idx on contacts using btree (email);
 create index contacts_created_at_updated_at_idx on contacts using btree (created_at,updated_at);

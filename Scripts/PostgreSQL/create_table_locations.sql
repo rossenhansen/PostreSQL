@@ -6,7 +6,7 @@ create table locations (
 	,location_name varchar
 	,location_type varchar(50)
 	,address_prefix varchar(255)
-	,address_street varchar(255)
+	,address_street varchar(510)
 	,location varchar(100)
 	,state varchar(50)
 	,postcode varchar(10)

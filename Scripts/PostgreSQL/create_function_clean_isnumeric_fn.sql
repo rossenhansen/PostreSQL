@@ -1,4 +1,4 @@
-create or replace function fn_isnumeric(text) returns boolean as $$
+create or replace function clean_isnumeric_fn(text) returns boolean as $$
 declare value numeric;
 begin
     value = $1::numeric;
@@ -9,3 +9,5 @@ end;
 $$
 strict
 language plpgsql immutable;
+
+

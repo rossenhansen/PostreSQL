@@ -1,0 +1,12 @@
+﻿"id","client","address1","address2","address3","city","state","zipcode","country","primary_location","phone","fax","currency","primary_currency","contact","primary_contact","direct_phone","mobile","email","synched_at","client_id","location_id","contact_id"
+1,Bellroy,Level 1,"421 Smith Street",,Fitzroy,VICTORIA,"3065",Australia,Yes,(03) 9024 2760,,AUD,Yes,Matthew Fallshaw,,,"0411 024 276",matt@bellroy.com,2018-03-18 17:08:58,,,
+10,Bellroy,Level 1,"421 Smith Street",,Fitzroy,VICTORIA,"3065",Australia,Yes,(03) 9024 2760,,AUD,Yes,Matthew Fallshaw,,,"0411 024 276",matthew.fallshaw@bellroy.com,2018-03-18 17:08:58,,,
+4,Bellroy,,"225 Jarosite Road",,Bells Beach,VICTORIA,"3228",Australia,yes,,,AUD,Yes,Andrew Fallshaw,Yes,(03) 9024 2760,"0411 225 000",andy@bellroy.com,2018-03-18 17:08:58,,,
+5,Page 8,,"188 Main Street",,Mornington,VICTORIA,"3931",Australia,true,(03) 5973 4888,(03) 5973 4880,AUD,Yes,Claire Hopegood,Yes,,"0419 546 325",claire_hopegood@bigpond.com.au,2018-03-18 17:08:58,,,
+6,Somewhere Store,,"314 Little Collins Street",,Melbourne,VICTORIA,"3000",Australia,"1",(03) 9663 3003,,AUD,Yes,Stephen Simon Chu,Yes,,"0418 333 251",info@somewherestore.com.au,2018-03-18 17:08:58,,,
+7,MAGAZIN,,Berliner Freiheit 30-34,,Bonn,,"53111",Germany,primary,"0228 390 830",,EUR,Yes,Günter Grass,Yes,,"0228 390 830",Günter.Grass@MAGAZIN.de,2018-03-18 17:08:58,,,
+8,Jaeger - Leder,,"Sieg Carré, Am Bahnhof 17",,Siegen,,"57072",Germany,-1,+49 271 23340,,EUR,Yes,Dieter Hess,Yes,,"0162 123 4567",Dieter@jaeger-leder.de,2018-03-18 17:08:58,,,
+9,Benjamin Barker,Orchard Cineleisure,"8 Grange RD 03/01",,Singapore,,"239695",Singapore,no  ,"6235 3703",,SGD,Yes,Patrick James Aaron Callahan,Yes,,"6235 3703",Orchard.Cineleisure@benjaminbarker.co,2018-03-18 17:08:58,,,
+2,Bellroy,Level 1,"421 Smith Street",,Fitzroy,VICTORIA,"3065",Australia,false,(03) 9024 2760,,AUD,Yes,Ally Gu,,,"0421 512 821",ally.gu@bellroy.com,2018-03-18 17:08:58,,,
+3,Bellroy,Level 1,"421 Smith Street",,Fitzroy,VICTORIA,"3065",Australia,yes,(03) 9024 2760,,AUD,Yes,Aimee Huggins,,,"0425 215 498",amiee.huggins@bellroy.com,2018-03-18 17:08:58,,,
+11,Mark Hansen,"1349 Nepean Highway",,,Mount Eliza,VICTORIA,"3930",Australia,home,"0407 853 500",,AUD,Yes,Mark Rossen Hansen,Yes,,"0407 853 500",mark.rossen.hansen@gmail.com,2018-03-18 21:42:51,,,
